@@ -1,0 +1,160 @@
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(170, 255, 170, 0); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .miImagen {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  .textoDerecha {
+    text-align: justify;
+    font-style: italic; 
+    font-weight: bold;
+    font-size: 18px; 
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px #ffffff; 
+
+  }
+  
+  p {
+    text-align: justify;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px #ffffff; 
+    color: #ffffff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  h3 {
+    font-size: 28px; 
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #fff9f9; 
+  }
+
+  .bg5h{
+    background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
+  }
+
+  .animatedShadow{
+    color: #ffffff;
+    font: normal 140px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    animation: move linear 2000ms infinite;
+    z-index: 2;
+    transform: scale(0.5); 
+    margin-bottom: -10px;
+  }
+  @keyframes move{
+    0% {
+        text-shadow:
+          4px -4px 0 #da0641,
+          3px -3px 0 #da0641,
+          2px -2px 0 #da0641,
+          1px -1px 0 #da0641,
+          -4px 4px 0 #13f1fc,
+          -3px 3px 0 #13f1fc,
+          -2px 2px 0 #13f1fc,
+          -1px 1px 0 #13f1fc;
+        }
+        25% {
+            text-shadow:
+              -4px -4px 0 #13f1fc,
+              -3px -3px 0 #13f1fc,
+              -2px -2px 0 #13f1fc,
+              -1px -1px 0 #13f1fc,
+              4px 4px 0 #da0641,
+              3px 3px 0 #da0641,
+              2px 2px 0 #da0641,
+              1px 1px 0 #da0641;
+          }
+          50% {
+            text-shadow:
+              -4px 4px 0 #da0641,
+              -3px 3px 0 #da0641,
+              -2px 2px 0 #da0641,
+              -1px 1px 0 #da0641,
+              4px -4px 0 #13f1fc,
+              3px -3px 0 #13f1fc,
+              2px -2px 0 #13f1fc,
+              1px -1px 0 #13f1fc;
+          }
+          75% {
+            text-shadow:
+              4px 4px 0 #13f1fc,
+              3px 3px 0 #13f1fc,
+              2px 2px 0 #13f1fc,
+              1px 1px 0 #13f1fc,
+              -4px -4px 0 #da0641,
+              -3px -3px 0 #da0641,
+              -2px -2px 0 #da0641,
+              -1px -1px 0 #da0641;
+          }
+          100% {
+            text-shadow:
+              4px -4px 0 #da0641,
+              3px -3px 0 #da0641,
+              2px -2px 0 #da0641,
+              1px -1px 0 #da0641,
+              -4px 4px 0 #13f1fc,
+              -3px 3px 0 #13f1fc,
+              -2px 2px 0 #13f1fc,
+              -1px 1px 0 #13f1fc;
+          }                        
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 24px; 
+    margin: 10px 0;
+    font-family: "Comic Sans MS", cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #ffffff; 
+}

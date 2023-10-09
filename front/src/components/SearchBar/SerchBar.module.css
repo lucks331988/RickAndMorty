@@ -1,0 +1,98 @@
+.container {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container:hover {
+    background-color: #343333;
+  }
+  
+  .inputStyle {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 15px;
+  }
+  
+  .button {
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background: #0c018271;
+    color: aliceblue;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    overflow: hidden;
+}
+
+  .button:hover{
+    color: aquamarine;
+  }
+
+  .button span{
+    position: absolute;
+    background: whitesmoke;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+  .button span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+  }
+  .button span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+  }
+
+  .button span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+  }
+
+  
+  .button span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+  }
+
+  .button:hover span:nth-child(1){
+    left: 0;
+
+  }
+  
+  .button:hover span:nth-child(2){
+    right: 0;
+
+  }
+  
+  .button:hover span:nth-child(3){
+    bottom: 0;
+
+  }
+  
+  .button:hover span:nth-child(4){
+    top: 0;
+  }

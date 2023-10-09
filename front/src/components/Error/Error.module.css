@@ -1,0 +1,32 @@
+
+.errorStyles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://images3.alphacoders.com/812/812062.png');
+    background-size: cover;
+    color: rgb(254, 0, 0); 
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 72px; 
+    margin: 0;
+    text-shadow: 2px 2px 4px #2fff00; 
+  }
+  
+  img {
+    max-width: 400px;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 30px;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  

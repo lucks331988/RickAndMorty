@@ -1,0 +1,167 @@
+:root{
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+
+  --body-font: sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem; 
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input,button{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.login{
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.login_bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.login_form{
+  position: relative;
+  margin-inline: 1.5rem;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding: 2.5rem 1rem;
+  color:var(--white-color);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+}
+
+.login_input{
+  width: 100%;
+  background: none;
+  color: var(--white-color);
+  padding-block: 1rem;
+}
+
+.login_input::placeholder{
+  color: var(--white-color);
+}
+
+.login_box i{
+  font-size: 1.25rem;
+}
+.login_button{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--white-color);
+  border-radius: 4rem;
+  color: var(--black-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+.login_title{
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.login_inputs, .login_box{
+  display: grid;
+}
+
+.login_inputs{
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.login_box{
+  grid-template-columns: 1fr max-content;
+  column-gap: .75rem;
+  align-items: center;
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding-inline: 1.25rem;
+  border-radius: 4rem;
+}
+
+.login_input,
+.login_button{
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+  .login_form {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+  
+  .login_title {
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+  .error{
+    font-size: var(--small-font-size);
+    color: red; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  /* Agrega estos estilos a tu archivo CSS, ajusta los valores según sea necesario */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Asegura que esté encima de todo */
+}
+
+.modalContent {
+  background-color: rgba(12, 156, 65, 0.468);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+ 
+.acceptButton {
+  background-color: #0355a894;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.acceptButton:hover {
+  background-color: #0056b3;
+}
